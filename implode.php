@@ -23,10 +23,13 @@
   $fileProp = explode(".", $fileName);
   $ext = end($fileProp);
 
-  $randomNum = (array)random_int(12345, 98765);
-  $newFileName = implode(".", $randomNum) . "." . $ext;
+  $date = (array) date("ymdhis");
+  $newFileName = implode(".", $date) . "." . $ext;
 
-  echo $newFileName;
+  echo nl2br($newFileName . "\n");
+  echo "<pre>";
+  var_dump($date);
+  echo "</pre>";
 
   ?>
 
