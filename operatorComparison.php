@@ -9,8 +9,20 @@
 </head>
 
 <body>
-  <?php 
-  
+  <?php
+  var_dump(10 < 5);
+  echo "<br>";
+  var_dump(10 > 5);
+  echo "<br>";
+  var_dump(10 === "10");
+  echo "<br>";
+  var_dump(10 !== "10");
+  echo "<br>";
+  var_dump(10 >= 10);
+  echo "<br>";
+  var_dump(10 <= 10);
+  echo "<br>";
+  var_dump(10 <> 5);
   ?>
 </body>
 
