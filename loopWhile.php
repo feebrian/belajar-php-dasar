@@ -11,7 +11,14 @@
 <body>
   <?php
 
-  
+  include("myFunction.php");
+
+  $num = 1;
+  while ($a <= 10) {
+    echo $num++;
+    breakln();
+  }
+
   ?>
 </body>
 
