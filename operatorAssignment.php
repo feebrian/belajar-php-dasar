@@ -11,6 +11,21 @@
 <body>
   <?php
 
+  $x = 10;
+  $y = 5;
+
+  echo $x . "\n" . $y;
+
+  echo "<br>" . $x += 10; // 20
+  echo "<br>" . $x -= 10; // 10
+  echo "<br>" . $x *= 10; // 100
+  echo "<br>" . $x /= 10; // 10
+  echo "<br>" . $x **= 10; // 0
+  echo "<br>" . $x %= 10; // 0
+
+  // a tricky assignment
+  echo "<br>" . $x .= " adam";
+
   ?>
 </body>
 
