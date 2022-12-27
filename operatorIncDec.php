@@ -1,3 +1,4 @@
+<?php include("myFunction.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,8 +22,17 @@
   echo $x;
   echo --$x;
   echo $x;
+  PHP_EOL;
 
-  
+  // testing alphabet aritmath
+  $x = 'W' . breakln();
+
+  for ($n = 0; $n < 5; $n++) {
+    echo ++$x . breakln();
+  }
+
+
+
   ?>
 </body>
 
