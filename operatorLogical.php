@@ -11,8 +11,8 @@
 <body>
   <?php
   include("myFunction.php");
-  $a = true || false;
-  $b = true || true;
+  $a = false || false;
+  $b = false || false;
   var_dump($a xor $b);
   breakln();
   var_dump($a && $b);
