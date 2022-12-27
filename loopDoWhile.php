@@ -14,13 +14,30 @@
 
   $num = 1;
   do {
-    echo $x;
+    echo $num;
+    $num++;
     breakln();
-    ++$x;
-    if ($x == 10) {
-      exit();
-    }
   } while ($num <= 10);
+
+  // testing
+
+  $numbers = array();
+  $array_size = 10;
+
+  for ($i = 0; $i < $array_size; $i++) {
+
+    do {
+      $random = rand(1, 1000);
+    } while (($random % 2) == 1);
+
+    $numbers[] = $random;
+  }
+
+  asort($numbers);
+  echo '<pre>';
+  print_r($numbers);
+  echo '</pre>';
+
   ?>
 </body>
 
