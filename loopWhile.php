@@ -14,10 +14,22 @@
   include("myFunction.php");
 
   $num = 1;
-  while ($a <= 10) {
+  while ($num <= 10) {
     echo $num++;
     breakln();
   }
+
+  // test pyramid
+$i = 1;
+while ($i <= 5) {
+    $j = 1;
+    while ($j <= $i) {
+      echo "*&nbsp&nbsp";
+      $j++;
+    }
+    echo "<br>";
+    $i++;
+}
 
   ?>
 </body>
