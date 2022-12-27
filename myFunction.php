@@ -2,5 +2,5 @@
 
 function breakln()
 {
-  nl2br("\n");
+  echo nl2br("\n");
 }
