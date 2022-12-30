@@ -52,7 +52,7 @@ echo "<br>";
 // functions arguments
 function takesArray($input)
 {
-  echo "$input[0] + $input[1] = ", $input[0] . $input[1];
+  echo "$input[0] + $input[1] = ", $input[0] . $input[1] . PHP_EOL;
 }
 takesArray(
   array('Adam', 'Febrian', 'Aditama')
@@ -67,3 +67,10 @@ takesArray(
     'Sengoku', 'Nadeko',
   )
 );
+
+function sayHello($name = "Anonymous") {
+  echo "Hello $name" . PHP_EOL;
+}
+
+sayHello("Adam");
+sayHello();
