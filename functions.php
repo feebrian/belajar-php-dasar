@@ -39,10 +39,31 @@ test2();
 // recursive function
 function recursion($a)
 {
-  if ($a <= 20){
-    echo $a . "\n";
+  if ($a <= 20) {
+    echo $a . "\n ";
     recursion($a + 1);
   }
 }
 
 recursion(0);
+echo "<br>";
+
+
+// functions arguments
+function takesArray($input)
+{
+  echo "$input[0] + $input[1] = ", $input[0] . $input[1];
+}
+takesArray(
+  array('Adam', 'Febrian', 'Aditama')
+);
+echo "<br>";
+takesArray(
+  array('Okita', 'Rinka')
+);
+echo "<br>";
+takesArray(
+  array(
+    'Sengoku', 'Nadeko',
+  )
+);
