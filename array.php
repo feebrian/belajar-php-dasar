@@ -27,6 +27,8 @@ for ($w = 0; $w < 3; $w++) {
 }
 
 // range on array
-foreach (range(0, 100, 10) as $num) {
-  echo $num;
+$arr = range(0, 100, 10);
+
+foreach ($arr as $num) {
+  echo ($num . PHP_EOL);
 }
