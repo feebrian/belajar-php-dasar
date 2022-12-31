@@ -58,21 +58,25 @@ takesArray(
   array('Adam', 'Febrian', 'Aditama')
 );
 
-function sayHello($name = "Anonymous") {
+function sayHello($name = "Anonymous")
+{
   echo "Hello $name" . PHP_EOL;
 }
 
 sayHello("Adam");
-sayHello(); 
+sayHello();
 
-function sum(int $x, int $y)
+function sum(int $x, int $y): string
 {
   $value = $x + $y;
-  echo "Hasil dari $x + $y = $value" . PHP_EOL;
+  return "Hasil dari $x + $y = $value" . PHP_EOL;
 }
 
-echo sum("12", "3");
-echo sum(12, 3);
-echo sum(1.2 , 1.5);
-echo sum(true, false);
+$final = sum(12, 15);
+
+for ($i = 0; $i < 5; $i++) {
+  echo $final;
+}
+
+
 // echo sum([1], [2]);
